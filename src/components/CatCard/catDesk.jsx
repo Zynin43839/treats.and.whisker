@@ -39,7 +39,7 @@ export const CatDesk = () => {
         ♻️ Reset Deck
       </button>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 shadow-sha">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 shadow-shadow">
         {displayCards.map((cat) => (
           <div
             key={cat.id}
@@ -49,9 +49,6 @@ export const CatDesk = () => {
               {cat.name}
             </h1>
             <p className="italic">{cat.dialog}</p>
-            <div>
-              <CatRequires />
-            </div>
             <img src={cat.imageSrc} alt={cat.name} className="w-60" />
             <p className="text-lg py-1.5 bg-green-300 w-full">
               💖 Kitty Detail 💖
